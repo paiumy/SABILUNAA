@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruang Belajar SABILUNAA</title>
+    
+    <!-- Import Google Fonts Profesional -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- CSS digabung dengan file utama -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: var(--bg-main);">
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">SABILUNAA <span class="dot">.</span></a>
+            <ul class="nav-links" style="display: flex;">
+                <li><a href="index.html" style="color: var(--primary);">← Kembali ke Beranda</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Container LMS (Margin atas ditambahkan agar tidak tertutup navbar) -->
+    <div class="lms-container" style="margin-top: 120px;">
+        
+        <!-- Sidebar Menu Bab -->
+        <aside class="lms-sidebar">
+            <h3>Daftar Bab</h3>
+            <ul class="lms-menu">
+                <li><button class="active" onclick="bukaBab('bab1')">Bab 1: Tanpa Kemiskinan</button></li>
+                <li><button onclick="bukaBab('bab2')">Bab 2: Pendidikan Berkualitas</button></li>
+                <li><button onclick="bukaBab('bab3')">Bab 3: Berkurangnya Kesenjangan</button></li>
+                <li><button onclick="bukaBab('bab4')">Bab 4: Evaluasi Pembelajaran</button></li>
+            </ul>
+        </aside>
+
+        <!-- Area Konten Utama -->
+        <main class="lms-content">
+            
+            <!-- ================= BAB 1 ================= -->
+            <div id="bab1" class="tab-content active">
+                <h2 style="color: var(--primary); font-size: 2.2rem; margin-bottom: 10px;">Bab 1: Tanpa Kemiskinan (No Poverty)</h2>
+                <p style="font-size: 1.1rem; color: var(--text-secondary);">Mengakhiri kemiskinan dalam segala bentuk di mana pun.</p>
+                
+                <!-- Kotak Daftar Sub-Bab -->
+                <div style="background-color: var(--primary-light); padding: 20px; border-radius: var(--radius-sm); margin-top: 25px; border-left: 4px solid var(--primary);">
+                    <h4 style="color: var(--primary-dark); margin-bottom: 10px;">Daftar Sub-Bab Materi:</h4>
+                    <ul style="list-style-type: none; padding-left: 0; margin-bottom: 0;">
+                        <li><a href="#sub1-1" style="color: var(--primary-dark); font-weight: 600;">1.1 Pengertian SDG 1</a></li>
+                        <li><a href="#sub1-2" style="color: var(--primary-dark); font-weight: 600;">1.2 Tujuan SDG 1</a></li>
+                        <li><a href="#sub1-3" style="color: var(--primary-dark); font-weight: 600;">1.3 Perspektif Islam</a></li>
+                        <li><a href="#sub1-4" style="color: var(--primary-dark); font-weight: 600;">1.4 Dalil Al-Qur'an & Hadits</a></li>
+                        <li><a href="#sub1-5" style="color: var(--primary-dark); font-weight: 600;">1.5 Implementasi Nyata</a></li>
+                        <li><a href="#sub1-6" style="color: var(--primary-dark); font-weight: 600;">1.6 Insight & Refleksi</a></li>
+                    </ul>
+                </div>
+
+                <!-- Gambar Poster SDG 1 -->
+                <img src="https://i.ibb.co.com/p66vnRsb/Whats-App-Image-2026-07-31-at-20-19-43.jpg" alt="SDG 1 Tanpa Kemiskinan" class="materi-img" style="object-fit: contain; background-color: #f1f5f9; padding: 20px;">
+                
+                <div class="materi-teks">
+                    <h3 id="sub1-1">1.1 Pengertian SDG 1</h3>
+                    <p>Tanpa Kemiskinan (No Poverty) merupakan tujuan pertama dalam Sustainable Development Goals (SDGs) yang berfokus pada upaya mengakhiri kemiskinan dalam segala bentuk dan dimensinya di seluruh dunia. Kemiskinan tidak hanya dipahami sebagai rendahnya pendapatan seseorang, tetapi juga mencakup keterbatasan dalam memenuhi kebutuhan dasar, seperti pangan, sandang, papan, pendidikan, layanan kesehatan, air bersih, sanitasi, pekerjaan yang layak, serta perlindungan sosial. Kondisi kemiskinan juga menyebabkan seseorang memiliki akses yang terbatas terhadap kesempatan untuk berkembang, sehingga memperbesar risiko terjadinya ketimpangan sosial dan ekonomi.</p>
+                    <p>Sebagai fondasi utama pembangunan berkelanjutan, SDG 1 menekankan pentingnya menciptakan sistem yang mampu memberikan kesempatan yang setara bagi seluruh masyarakat untuk meningkatkan kualitas hidupnya. Hal tersebut dilakukan melalui penguatan perlindungan sosial, pemberdayaan ekonomi masyarakat, penciptaan lapangan kerja, peningkatan akses terhadap layanan publik, serta pembangunan yang inklusif dan berkeadilan. Dengan demikian, pengentasan kemiskinan tidak hanya berorientasi pada pemberian bantuan, tetapi juga pada pemberdayaan agar masyarakat mampu hidup mandiri dan sejahtera secara berkelanjutan.</p>
+                    
+                    <h3 id="sub1-2">1.2 Tujuan SDG 1</h3>
+                    <p>SDGs 1 bertujuan menghapus kemiskinan ekstrem serta mengurangi jumlah masyarakat yang hidup di bawah garis kemiskinan melalui penyediaan akses yang adil terhadap sumber daya ekonomi, pendidikan, layanan kesehatan, pekerjaan yang layak, dan perlindungan sosial. Tujuan ini juga mendorong pemerintah, sektor swasta, organisasi masyarakat, dan individu untuk bekerja sama dalam membangun sistem ekonomi yang inklusif sehingga seluruh lapisan masyarakat memiliki kesempatan yang sama untuk meningkatkan kesejahteraannya.</p>
+                    <p>Selain itu, SDGs 1 berupaya meningkatkan ketahanan masyarakat terhadap berbagai risiko, seperti bencana alam, krisis ekonomi, perubahan iklim, maupun konflik sosial yang dapat memperburuk kondisi kemiskinan. Dengan terciptanya masyarakat yang lebih mandiri, produktif, dan berdaya, pembangunan berkelanjutan dapat diwujudkan secara lebih merata tanpa meninggalkan kelompok yang rentan.</p>
+                    
+                    <h3 id="sub1-3">1.3 Perspektif Islam</h3>
+                    <p>Berdasarkan konteks Islam, kemiskinan tidak dinilai dari banyaknya pengeluaran atau pendapatan tetapi pemenuhan kebutuhan pokok secara individual. Kebutuhan pokok tersebut mencakup sandang, pangan, tempat tinggal, kesehatan dan pendidikan secara layak. Berdasarkan Alquran surah Al-Baqarah (233), Ath-Thalâq (6), At-Taubah (103), Ar-Rûm (39), dan Ibrâhîm (7), cara Islam dalam mengentaskan kemiskinan dapat dilihat dari: (a) Faktor individu; Islam mengajarkan kepada setiap Muslim yang memiliki kemampuan untuk bekerja keras dan berusaha mencari nafkah baik bagi dirinya maupun untuk keluarganya yang menjadi tanggungannya dan (b) Faktor lingkungan sosial kemasyarakatan yang terdiri dari prinsip pentingnya zakat produktif dan prinsip kerjasama dalam lingkungan keluarga dan masyarakat.</p>
+                    <p>Dalam Islam, kemiskinan bukan sekadar rendahnya pendapatan, tetapi kondisi ketika seseorang belum mampu memenuhi kebutuhan dasar yang layak. Islam membangun sistem ekonomi yang berorientasi pada keadilan distributif, bukan hanya pertumbuhan ekonomi. Instrumen seperti zakat, infak, sedekah, dan wakaf (ZISWAF) bukan hanya ibadah, tetapi juga mekanisme pemerataan kesejahteraan agar kekayaan tidak beredar di kalangan orang kaya saja (QS. Al-Hasyr: 7).</p>
+                    <p>Dalam perspektif Maqashid Syariah, pengentasan kemiskinan berkaitan dengan:</p>
+                    <ul>
+                        <li><strong>Hifzh al-Nafs</strong> (menjaga jiwa) melalui pemenuhan kebutuhan hidup.</li>
+                        <li><strong>Hifzh al-Mal</strong> (menjaga harta) melalui distribusi kekayaan yang adil.</li>
+                        <li><strong>Hifzh al-'Aql</strong> (menjaga akal) melalui akses pendidikan.</li>
+                        <li><strong>Hifzh al-Din</strong> (menjaga agama) karena kemiskinan dapat menjadi ujian yang memengaruhi kualitas ibadah seseorang.</li>
+                    </ul>
+                    
+                    <h3 id="sub1-4">1.4 Dalil Al-Qur'an & Hadits</h3>
+                    <p>Surah Al-Baqarah (233), Ath-Thalâq (6), At-Taubah (103), Ar-Rûm (39), dan Ibrâhîm (7).</p>
+                    
+                    <h3 id="sub1-5">1.5 Implementasi Nyata (Contoh Praktik Sehari-hari)</h3>
+                    <ul>
+                        <li>Membayar zakat sesuai ketentuan syariat sebagai bentuk pemerataan kesejahteraan dan membantu fakir miskin.</li>
+                        <li>Menyisihkan sebagian rezeki untuk infak dan sedekah secara rutin kepada masyarakat yang membutuhkan.</li>
+                        <li>Membeli produk UMKM atau usaha kecil sebagai bentuk dukungan terhadap peningkatan ekonomi masyarakat.</li>
+                        <li>Bekerja dengan sungguh-sungguh dan mencari rezeki yang halal, karena bekerja merupakan bagian dari ibadah dalam Islam.</li>
+                        <li>Mengikuti atau mengadakan pelatihan keterampilan untuk meningkatkan kompetensi diri maupun memberdayakan masyarakat agar lebih mandiri secara ekonomi.</li>
+                    </ul>
+
+                    <h3 id="sub1-6">1.6 Insight & Refleksi</h3>
+                    <p><strong>Hikmah:</strong> Islam mengajarkan bahwa harta merupakan amanah dari Allah SWT yang di dalamnya terdapat hak bagi mereka yang membutuhkan. Pengentasan kemiskinan bukan hanya bertujuan meningkatkan kesejahteraan ekonomi, tetapi juga memperkuat rasa persaudaraan (ukhuwah), keadilan sosial, dan tanggung jawab bersama dalam membangun masyarakat yang sejahtera.</p>
+                    <p><strong>Refleksi:</strong> Kemiskinan bukan hanya persoalan kurangnya harta, tetapi juga ujian bagi rasa empati dan kepedulian kita terhadap sesama. Sudahkah kita memanfaatkan nikmat yang Allah berikan untuk membantu orang lain? Setiap kebaikan, sekecil apa pun, dapat menjadi langkah nyata dalam mengurangi kemiskinan.</p>
+                </div>
+
+                <!-- Video YouTube Bab 1 -->
+                <iframe class="materi-video" src="https://www.youtube.com/embed/INgXVNFWmH0" title="Video Materi Bab 1" allowfullscreen></iframe>
+                
+                <div style="margin-top: 30px; text-align: right; border-top: 1px solid rgba(0,0,0,0.1); padding-top: 25px;">
+                    <a href="https://forms.gle/oKsBVARUxe2HvimPA" target="_blank" class="btn btn-primary">Kerjakan Kuis Bab 1</a>
+                </div>
+            </div>
+
+            <!-- ================= BAB 2 ================= -->
+            <div id="bab2" class="tab-content">
+                <h2 style="color: #C5192D; font-size: 2.2rem; margin-bottom: 10px;">Bab 2: Pendidikan Berkualitas (Quality Education)</h2>
+                
+                <!-- Kotak Daftar Sub-Bab -->
+                <div style="background-color: #fae6e8; padding: 20px; border-radius: var(--radius-sm); margin-top: 25px; border-left: 4px solid #C5192D;">
+                    <h4 style="color: #C5192D; margin-bottom: 10px;">Daftar Sub-Bab Materi:</h4>
+                    <ul style="list-style-type: none; padding-left: 0; margin-bottom: 0;">
+                        <li><a href="#sub2-1" style="color: #a81525; font-weight: 600;">2.1 Pengertian SDG 4</a></li>
+                        <li><a href="#sub2-2" style="color: #a81525; font-weight: 600;">2.2 Tujuan SDG 4</a></li>
+                        <li><a href="#sub2-3" style="color: #a81525; font-weight: 600;">2.3 Perspektif Islam</a></li>
+                        <li><a href="#sub2-4" style="color: #a81525; font-weight: 600;">2.4 Dalil Al-Qur'an & Hadits</a></li>
+                        <li><a href="#sub2-5" style="color: #a81525; font-weight: 600;">2.5 Implementasi Nyata</a></li>
+                        <li><a href="#sub2-6" style="color: #a81525; font-weight: 600;">2.6 Insight & Refleksi</a></li>
+                    </ul>
+                </div>
+
+                <!-- Gambar Poster SDG 4 -->
+                <img src="https://i.ibb.co.com/99DpQpZP/Whats-App-Image-2026-07-31-at-20-20-06.jpg" alt="SDG 4 Pendidikan Berkualitas" class="materi-img" style="object-fit: contain; background-color: #f1f5f9; padding: 20px;">
+                
+                <div class="materi-teks">
+                    <h3 id="sub2-1">2.1 Pengertian SDG 4</h3>
+                    <p>Pendidikan Berkualitas (Quality Education) merupakan tujuan keempat dalam Sustainable Development Goals (SDGs) yang bertujuan menjamin terselenggaranya pendidikan yang inklusif, adil, berkualitas, dan dapat diakses oleh seluruh masyarakat tanpa diskriminasi. Pendidikan dipandang sebagai hak dasar setiap manusia sekaligus investasi jangka panjang dalam pembangunan suatu bangsa.</p>
+
+                    <h3 id="sub2-2">2.2 Tujuan SDG 4</h3>
+                    <p>SDG 4 bertujuan memastikan seluruh masyarakat memperoleh kesempatan belajar yang setara sejak pendidikan anak usia dini hingga pendidikan tinggi, tanpa memandang latar belakang ekonomi, gender, kondisi fisik, maupun wilayah tempat tinggal. Lebih jauh lagi, SDG 4 bertujuan membentuk generasi yang memiliki pengetahuan, keterampilan, karakter, serta kepedulian terhadap isu-isu global.</p>
+
+                    <h3 id="sub2-3">2.3 Perspektif Islam</h3>
+                    <p>Dalam perspektif Islam, menuntut ilmu merupakan kewajiban bagi setiap Muslim karena ilmu menjadi fondasi dalam membangun peradaban dan meningkatkan kualitas kehidupan. Islam memandang pendidikan sebagai sarana untuk membentuk manusia yang beriman, berilmu, berakhlak mulia, dan mampu memberikan manfaat bagi masyarakat.</p>
+                    <p>Konsep pendidikan Islam mencakup tiga dimensi utama:</p>
+                    <ul>
+                        <li><strong>Tarbiyah</strong>, yaitu proses pembinaan dan pengembangan potensi manusia secara bertahap.</li>
+                        <li><strong>Ta'lim</strong>, yaitu proses transfer ilmu pengetahuan.</li>
+                        <li><strong>Ta'dib</strong>, yaitu pembentukan adab, karakter, dan moral.</li>
+                    </ul>
+
+                    <h3 id="sub2-4">2.4 Dalil Al-Qur'an & Hadits</h3>
+                    <p>QS. Al-'Alaq: 1–5 → Perintah membaca dan menuntut ilmu. QS. Al-Mujadilah: 11 → Allah mengangkat derajat orang-orang yang berilmu. Rasulullah ﷺ bersabda: "Menuntut ilmu adalah kewajiban bagi setiap Muslim." (HR. Ibnu Majah No. 224)</p>
+
+                    <h3 id="sub2-5">2.5 Implementasi Nyata</h3>
+                    <ul>
+                        <li>Belajar dengan sungguh-sungguh sebagai bentuk ibadah kepada Allah SWT.</li>
+                        <li>Membiasakan membaca buku, Al-Qur'an, maupun sumber pengetahuan lainnya setiap hari.</li>
+                        <li>Memanfaatkan teknologi digital dan kecerdasan buatan (AI) secara bijak sebagai media pembelajaran.</li>
+                        <li>Berbagi ilmu kepada teman, keluarga, atau masyarakat sebagai bentuk amal jariyah.</li>
+                        <li>Mendukung pendidikan bagi anak-anak kurang mampu melalui donasi buku, beasiswa, atau kegiatan mengajar.</li>
+                    </ul>
+
+                    <h3 id="sub2-6">2.6 Insight & Refleksi</h3>
+                    <p><strong>Hikmah:</strong> Pendidikan tidak hanya bertujuan memperoleh pengetahuan, tetapi juga membentuk akhlak, memperkuat keimanan, serta melahirkan individu yang mampu memberikan manfaat bagi sesama.</p>
+                    <p><strong>Refleksi:</strong> Menuntut ilmu adalah perjalanan yang tidak mengenal batas usia. Ilmu yang kita peroleh hendaknya tidak hanya menjadi bekal untuk meraih kesuksesan pribadi, tetapi juga menjadi sarana untuk memberikan manfaat bagi orang lain.</p>
+                </div>
+
+                <!-- Video YouTube Bab 2 -->
+                <iframe class="materi-video" src="https://www.youtube.com/embed/fCuFFKLJWSI" title="Video Materi Bab 2" allowfullscreen></iframe>
+                
+                <div style="margin-top: 30px; text-align: right; border-top: 1px solid rgba(0,0,0,0.1); padding-top: 25px;">
+                    <a href="https://forms.gle/aXKZkWKhznP94i9XA" target="_blank" class="btn btn-primary">Kerjakan Kuis Bab 2</a>
+                </div>
+            </div>
+
+            <!-- ================= BAB 3 ================= -->
+            <div id="bab3" class="tab-content">
+                <h2 style="color: #DD1367; font-size: 2.2rem; margin-bottom: 10px;">Bab 3: Berkurangnya Kesenjangan (Reduced Inequalities)</h2>
+                
+                <!-- Kotak Daftar Sub-Bab -->
+                <div style="background-color: #fce7f0; padding: 20px; border-radius: var(--radius-sm); margin-top: 25px; border-left: 4px solid #DD1367;">
+                    <h4 style="color: #DD1367; margin-bottom: 10px;">Daftar Sub-Bab Materi:</h4>
+                    <ul style="list-style-type: none; padding-left: 0; margin-bottom: 0;">
+                        <li><a href="#sub3-1" style="color: #b50f54; font-weight: 600;">3.1 Pengertian SDG 10</a></li>
+                        <li><a href="#sub3-2" style="color: #b50f54; font-weight: 600;">3.2 Tujuan SDG 10</a></li>
+                        <li><a href="#sub3-3" style="color: #b50f54; font-weight: 600;">3.3 Perspektif Islam</a></li>
+                        <li><a href="#sub3-4" style="color: #b50f54; font-weight: 600;">3.4 Dalil Al-Qur'an & Hadits</a></li>
+                        <li><a href="#sub3-5" style="color: #b50f54; font-weight: 600;">3.5 Implementasi Nyata</a></li>
+                        <li><a href="#sub3-6" style="color: #b50f54; font-weight: 600;">3.6 Insight & Refleksi</a></li>
+                    </ul>
+                </div>
+
+                <!-- Gambar Poster SDG 10 -->
+                <img src="https://i.ibb.co.com/x8MtFFrB/Whats-App-Image-2026-07-31-at-20-20-20.jpg" alt="SDG 10 Berkurangnya Kesenjangan" class="materi-img" style="object-fit: contain; background-color: #f1f5f9; padding: 20px;">
+                
+                <div class="materi-teks">
+                    <h3 id="sub3-1">3.1 Pengertian SDG 10</h3>
+                    <p>Berkurangnya Kesenjangan (Reduced Inequalities) merupakan tujuan kesepuluh dalam Sustainable Development Goals (SDGs) yang bertujuan mengurangi berbagai bentuk ketimpangan yang terjadi di dalam maupun antarnegara. Kesenjangan tidak hanya berkaitan dengan perbedaan tingkat pendapatan, tetapi juga mencakup ketimpangan dalam memperoleh pendidikan, layanan kesehatan, pekerjaan, teknologi, perlindungan hukum, partisipasi politik, serta akses terhadap berbagai peluang pembangunan.</p>
+
+                    <h3 id="sub3-2">3.2 Tujuan SDG 10</h3>
+                    <p>SDGs 10 bertujuan mengurangi kesenjangan sosial, ekonomi, dan kesempatan melalui kebijakan yang inklusif, adil, dan berpihak kepada kelompok rentan. Tujuan ini juga mendorong pemerataan akses dan menghapus segala bentuk diskriminasi berdasarkan status sosial, gender, agama, suku, ras, kondisi ekonomi, maupun disabilitas.</p>
+
+                    <h3 id="sub3-3">3.3 Perspektif Islam</h3>
+                    <p>Dalam perspektif Islam, seluruh manusia memiliki kedudukan yang sama di hadapan Allah SWT. Perbedaan suku, bangsa, warna kulit, maupun status sosial bukanlah alasan untuk saling merendahkan, melainkan sebagai sarana untuk saling mengenal dan bekerja sama dalam kebaikan. Islam mengajarkan prinsip keadilan (al-'adl), persamaan hak, dan persaudaraan (ukhuwah) sebagai landasan dalam kehidupan bermasyarakat.</p>
+                    <p>Dalam perspektif Maqashid Syariah, SDG 10 berkaitan erat dengan:</p>
+                    <ul>
+                        <li><strong>Hifzh al-Mal</strong> (menjaga harta) melalui distribusi ekonomi yang adil.</li>
+                        <li><strong>Hifzh al-Nafs</strong> (menjaga jiwa) melalui pemenuhan hak hidup yang layak.</li>
+                        <li><strong>Hifzh al-'Ird</strong> (menjaga martabat manusia) dengan menghapus diskriminasi dan memastikan setiap orang diperlakukan secara bermartabat.</li>
+                    </ul>
+
+                    <h3 id="sub3-4">3.4 Dalil Al-Qur'an & Hadits</h3>
+                    <p>QS. Al-Hujurat: 13 → Allah menciptakan manusia bersuku-suku dan berbangsa-bangsa agar saling mengenal; yang paling mulia adalah yang paling bertakwa. QS. An-Nahl: 90 → Allah memerintahkan berlaku adil dan berbuat kebajikan.</p>
+                    
+                    <h3 id="sub3-5">3.5 Implementasi Nyata</h3>
+                    <ul>
+                        <li>Menghormati setiap orang tanpa membedakan suku, agama, ras, gender, maupun status sosial.</li>
+                        <li>Tidak melakukan perundungan (bullying) atau diskriminasi dalam bentuk apapun.</li>
+                        <li>Bersikap adil kepada teman, keluarga, maupun rekan kerja.</li>
+                        <li>Membantu masyarakat yang kurang mampu melalui zakat, infak, sedekah, atau kegiatan sosial.</li>
+                        <li>Menghargai penyandang disabilitas serta mendukung terciptanya lingkungan yang inklusif.</li>
+                    </ul>
+
+                    <h3 id="sub3-6">3.6 Insight & Refleksi</h3>
+                    <p><strong>Hikmah:</strong> Kemuliaan seseorang tidak ditentukan oleh kekayaan, jabatan, maupun keturunan, melainkan oleh ketakwaan dan amal salehnya. Dengan menjunjung tinggi nilai keadilan dan kepedulian sosial, kesenjangan dalam masyarakat dapat dikurangi.</p>
+                    <p><strong>Refleksi:</strong> Perbedaan merupakan sunnatullah yang seharusnya menjadi kekuatan untuk saling melengkapi, bukan alasan untuk saling merendahkan. Sudahkah kita memperlakukan setiap orang dengan adil dan penuh rasa hormat?</p>
+                </div>
+                
+                <!-- Video YouTube Bab 3 -->
+                <iframe class="materi-video" src="https://www.youtube.com/embed/Xl_ROJYofT0" title="Video Materi Bab 3" allowfullscreen></iframe>
+                
+                <div style="margin-top: 30px; text-align: right; border-top: 1px solid rgba(0,0,0,0.1); padding-top: 25px;">
+                    <a href="https://forms.gle/yrQCSzpqF9R5ArrK6" target="_blank" class="btn btn-primary">Kerjakan Kuis Bab 3</a>
+                </div>
+            </div>
+
+            <!-- ================= BAB 4 (Evaluasi) ================= -->
+            <div id="bab4" class="tab-content">
+                <h2 style="color: var(--text-primary); font-size: 2.2rem; margin-bottom: 20px;">Bab 4: Evaluasi Pembelajaran</h2>
+                <div class="materi-teks">
+                    <p><strong>Ringkasan materi:</strong> Membahas masa Khulafaur Rasyidin yang terdiri dari Abu Bakar, Umar, Utsman, dan Ali. Pada masa ini terjadi penguatan pemerintahan Islam, perluasan wilayah, pengumpulan Al-Qur’an, serta berbagai kebijakan penting. Kepemimpinan mereka menjadi teladan dalam keadilan, musyawarah, dan tanggung jawab.</p>
+                    
+                    <img src="https://i.ibb.co.com/DPw7v7Lq/unnamed-3.png" alt="Materi Bab 4" class="materi-img" style="object-fit: contain; background-color: #f1f5f9; padding: 20px;">
+
+                    <h3>4.1 Game Edukasi</h3>
+                    <p>Silakan coba mini-game interaktif dari materi yang telah dipelajari.</p>
+                    <a href="https://youtu.be/3WNUMLwLZlc" target="_blank" class="btn btn-secondary">Tonton Video Pembahasan (Bab 4)</a>
+
+                    <h3 style="margin-top: 40px;">4.2 Challenge Harian</h3>
+                    <p>Lakukan aksi nyata sesuai SDGs yang telah dipelajari hari ini dan dokumentasikan di grup kelas.</p>
+
+                    <div style="background-color: var(--primary-light); padding: 40px; border-radius: var(--radius-md); margin-top: 40px; text-align: center; border: 1px solid var(--border-light);">
+                        <h3 style="margin-top: 0;">4.3 Quiz Akhir Pembelajaran</h3>
+                        <p style="margin-bottom: 30px; font-size: 1.1rem;">Uji pemahaman Anda terhadap seluruh materi SDGs dalam Perspektif Islam yang telah dipelajari.</p>
+                        <a href="https://forms.gle/zmtqH5Y3CEjTZGUT6" target="_blank" class="btn btn-primary" style="font-size: 1.1rem; padding: 15px 40px;">Masuk Ujian Akhir</a>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <!-- Script khusus untuk LMS -->
+    <script src="script.js"></script>
+</body>
+</html>
