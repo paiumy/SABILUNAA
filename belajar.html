@@ -15,6 +15,68 @@
 
     <!-- CSS Tambahan untuk Background Animasi SDG & Transisi Sidebar -->
     <style>
+        /* =======================================
+           DESAIN BARU UNTUK SIDEBAR MENU
+           ======================================= */
+        .lms-sidebar {
+            background: linear-gradient(180deg, #e0f2fe 0%, #bae6fd 100%); /* Gradasi Biru Muda */
+            border-right: 2px solid rgba(2, 132, 199, 0.2);
+            border-radius: 20px 0 0 20px;
+        }
+        
+        
+        .lms-sidebar h3 {
+            color: var(--primary-dark);
+            font-weight: 800;
+            margin-bottom: 25px;
+            border-bottom: 2px dashed rgba(2, 132, 199, 0.3);
+            padding-bottom: 15px;
+            letter-spacing: 1px;
+        }
+
+        /* Desain awal tombol menu (terlihat seperti kotak timbul) */
+        .lms-menu button {
+            background: white !important;
+            border: 1px solid rgba(0,0,0,0.06) !important;
+            border-radius: 12px !important;
+            margin-bottom: 12px !important;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+            font-weight: 600 !important;
+            color: var(--text-muted) !important;
+            display: flex;
+            align-items: center;
+        }
+        
+        /* Menambahkan ikon buku secara otomatis di kiri teks */
+        .lms-menu button::before {
+            content: '📚';
+            margin-right: 12px;
+            font-size: 1.2rem;
+            opacity: 0.8;
+            transition: 0.3s;
+        }
+
+        /* Efek saat kursor diarahkan ke tombol */
+        .lms-menu button:hover {
+            transform: translateY(-3px) translateX(6px) !important;
+            box-shadow: 0 6px 15px rgba(2, 132, 199, 0.15) !important;
+            border-color: var(--primary-light) !important;
+            color: var(--primary) !important;
+        }
+
+        /* Efek khusus untuk tombol yang SEDANG AKTIF (diklik) */
+        .lms-menu button.active {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark)) !important;
+            color: white !important;
+            box-shadow: 0 8px 20px rgba(2, 132, 199, 0.3) !important;
+            border: none !important;
+        }
+        
+        /* Ikon berubah saat tombol aktif */
+        .lms-menu button.active::before {
+            content: '📖';
+            opacity: 1;
+        }
         /* Animasi Background SDG */
         .sdg-background {
             background: linear-gradient(-45deg, #0a1628, #0A97D3, #E5243B, #DD1367, #0a1628);
@@ -74,7 +136,9 @@
     <!-- Navbar (Logo Gambar sudah dihapus, hanya Teks) -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
-            <a href="index.html" class="logo">SABILUNAA <span class="dot">.</span></a>
+          <a href="#" class="logo">
+    <img src="https://i.ibb.co.com/Y417rSY2/logo.png" alt="Logo Sabilunaa" style="height: 170px; width: auto; object-fit: contain;">
+</a>
             <ul class="nav-links" style="display: flex;">
                 <li><a href="index.html" style="color: var(--primary);">← Kembali ke Beranda</a></li>
             </ul>
@@ -82,10 +146,10 @@
     </nav>
 
     <!-- Container LMS dengan Efek Kaca (Margin diatur agar tidak tertutup navbar) -->
-    <div class="lms-container glass-container" style="margin-top: 100px; border-radius: 20px;">
+    <div class="lms-container glass-container" style="margin-top: 180px; border-radius: 20px;">
         
         <!-- Sidebar Menu Bab -->
-        <aside class="lms-sidebar" style="background-color: transparent; border-right: 1px solid rgba(0,0,0,0.08);">
+        <aside class="lms-sidebar">
             <h3>Daftar Bab</h3>
             <ul class="lms-menu">
                 <li><button class="active" onclick="bukaBab('bab1')">Bab 1: Tanpa Kemiskinan</button></li>
